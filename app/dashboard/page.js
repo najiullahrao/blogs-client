@@ -7,7 +7,8 @@ export default function Dashboard() {
   const [form, setForm] = useState({ title: "", author: "", blog: "" });
   const [editId, setEditId] = useState(null);
 
-  const API_URL = "http://localhost:3000/blogs";
+  const API_URL = "https://blogs-server-production.up.railway.app/blogs";
+
 
   useEffect(() => {
     fetchBlogs();
